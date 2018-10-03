@@ -14,7 +14,6 @@ First, I quietely load the packages needed for my analysis and visualizaion.
 
 ```r
 # loading dplyr and ggplot2 quietely
-
 library(dplyr, quietly = TRUE)
 library(ggplot2, quietly = TRUE)
 ```
@@ -26,7 +25,6 @@ I have already downloaded the data and it's in my working directory C:/Users/Aoh
 
 ```r
 # loading data and transforming the date variable from factor to date 
-
 activity <- read.csv('activity.csv')
 activity <- transform(activity, date = as.Date(date))
 ```

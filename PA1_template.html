@@ -127,14 +127,12 @@ $(document).ready(function () {
 
 <p>First, I quietely load the packages needed for my analysis and visualizaion.</p>
 <pre class="r"><code># loading dplyr and ggplot2 quietely
-
 library(dplyr, quietly = TRUE)
 library(ggplot2, quietly = TRUE)</code></pre>
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
 <p>I have already downloaded the data and it’s in my working directory C:/Users/Aohagi/Documents/R Programming/Reproducible Research/RepData_PeerAssessment1. Now, I load the data and do some cleaning like changing the date variable to the date format that R recognises.</p>
 <pre class="r"><code># loading data and transforming the date variable from factor to date 
-
 activity &lt;- read.csv('activity.csv')
 activity &lt;- transform(activity, date = as.Date(date))</code></pre>
 </div>
